@@ -12,18 +12,14 @@ class MinionAdapter(val items: Array<Minions>) : RecyclerView.Adapter<MinionAdap
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bindMinions(minions: Minions) {
             with(minions) {
-                //itemView.minionName.text = "$name"
                 itemView.minionName.text = minions.name
                 itemView.minionImg.setImageResource(minions.img)
-                //itemView.minionDesc.text = "$mDescription"
-
+                itemView.minionDesc.text = minions.mDescription
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-//        val lineView = LayoutInflater.from(parent.context).inflate(R.layout.item_and_minions, parent, false)
-//        return ViewHolder(lineView)
         return ViewHolder(parent.inflate(R.layout.item_and_minions))
     }
 
