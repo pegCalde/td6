@@ -5,13 +5,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.item_and_minions.view.*
 
 class MinionAdapter(val items: Array<Minions>) : RecyclerView.Adapter<MinionAdapter.ViewHolder>() {
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bindMinions(minions: Minions) {
             with(minions) {
-                itemView.minionName.text = "$name"
+                //itemView.minionName.text = "$name"
+                itemView.minionName.text = minions.name
+                itemView.minionImg.setImageResource(minions.img)
+                //itemView.minionDesc.text = "$mDescription"
+
             }
         }
     }
