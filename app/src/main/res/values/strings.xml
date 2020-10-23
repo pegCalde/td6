@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">td6</string>
+
+    <string-array name="name">
+        <item>kevin</item>
+        <item>dave</item>
+        <item>bob</item>
+        <item>stuart</item>
+        <item>margot</item>
+        <item>edith</item>
+        <item>agnes</item>
+        <item>gru</item>
+        <item>dr_nefario</item>
+        <item>lucie</item>
+    </string-array>
+
+</resources>
